@@ -1,1 +1,29 @@
 // Mixins Here
+
+.paraborder(){
+    border: 2px dashed orange;
+    border-radius: 1rem;;
+}
+
+
+
+.btnborder(){
+    width: 150px;
+    height: 50px;
+    border-radius: 2rem;
+}
+
+.custombtn(@justify, @backgroundcolor, @fontcolor){
+    display: flex;
+    justify-content: @justify;
+    background: @backgroundcolor;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: @fontcolor;
+
+    &:hover{
+    background: orange;
+    color: red;
+    }
+}
