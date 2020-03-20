@@ -1,7 +1,7 @@
 // Navigation code here
 
 nav{
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
     height: 15rem;
     font-size: 3.2rem;
@@ -23,18 +23,22 @@ nav{
         // margin: 2rem auto;
     }
     .navbtn{
-        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
         font-size: 2rem;
+        // display: flex;
+        // justify-content: space-around;
         @media (max-width: 800px){
+            width: 100%;
             display: flex;
             justify-content: space-between;
             justify-content: center;
         }
         @media (max-width: 500px){
+            width: 100%;
             display: flex;
-            // justify-content: space-between;
-            justify-content: center;
-            margin: 10px;
+            justify-content: space-between;
+            margin: 20px;
         }
 
 
@@ -46,7 +50,8 @@ nav{
             text-decoration: none;
             color: @shuttle-gray;
             @media (max-width: 500px){
-                width: 100%
+                width: 100%;
+                margin: 0;
             }
 
         }

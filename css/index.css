@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 nav {
-  max-width: 50%;
+  max-width: 100%;
   margin: 0 auto;
   height: 15rem;
   font-size: 3.2rem;
@@ -180,11 +180,13 @@ nav .topheading {
   padding: 30px;
 }
 nav .navbtn {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   font-size: 2rem;
 }
 @media (max-width: 800px) {
   nav .navbtn {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -192,9 +194,10 @@ nav .navbtn {
 }
 @media (max-width: 500px) {
   nav .navbtn {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    margin: 10px;
+    justify-content: space-between;
+    margin: 20px;
   }
 }
 nav .navbtn a {
@@ -207,6 +210,7 @@ nav .navbtn a {
 @media (max-width: 500px) {
   nav .navbtn a {
     width: 100%;
+    margin: 0;
   }
 }
 footer {
@@ -218,6 +222,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .headerimage {
+  border-radius: 3rem;
+}
+@media (max-width: 800px) {
+  .home .intro .headerimage {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro .headerimage {
+    width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -232,8 +249,15 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images .hide {
-  visibility: hidden;
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .hide {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -262,6 +286,15 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .home .walk {
+    width: 100%;
+    height: 100%;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+  }
+}
 @media (max-width: 500px) {
   .home .walk {
     width: 100%;
@@ -272,13 +305,19 @@ footer {
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 800px) {
+  .home .walk .walk-text {
+    width: 50%;
+  }
+}
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 .home .walk .walk-text h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
@@ -302,14 +341,27 @@ footer {
   background: orange;
   color: red;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 0;
+  }
+}
 .home .walk .walk-img {
-  width: 46%;
+  width: 50%;
   margin-left: 4%;
+}
+@media (max-width: 800px) {
+  .home .walk .walk-img {
+    width: 50%;
+    height: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 .home .walk .walk-img img {
