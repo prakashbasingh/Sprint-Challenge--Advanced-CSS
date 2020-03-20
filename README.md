@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+- The adaptive website adjusts the size of the browser to a specific width. After reaching the specific width, the browser snaps into the next browser size. 
+-A fully responsive website is adaptable to any size of the display device.  It does not matter what browser size; it will adapt and adjust the content based on the size of the display. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+- Mobile first designs are built primarily for mobile display size. Then media query is added for the larger screen such as tablet and desktop.
+-Desktop first designs are built for the larger desktop screen, and later media queries allow scale down the browser size for the smaller screen size.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+- It will bring font size to 10px for the entire website. This will allow the easy calculation to resize the font using rem. For example.  After setting font-size: 62.5% in the HTML tag, if we want 20px font, we can simply give font size with 2rem. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+- It is a process of incorporating additional unique syntax to CSS using CSS processors such as “CSS less.” These CSS processors add some features that do not exist in CSS. Mixins, nesting, variables, scaping are examples of some features that are available only in the CSS processor, which helps to maintain CSS easily, and these are easy to read.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+- I found nesting is a cool feature, it brings all the styling into a single parent section. I had fun with variable and scaping to because it was quite easy to understand their function.  I had a hard time grasping the concept of parametric mixins, but I went over a few times, and I think now, I have a clear view of what mixin can do in a CSS preprocessor.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
